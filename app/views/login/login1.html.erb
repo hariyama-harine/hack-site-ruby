@@ -1,0 +1,18 @@
+<div class="container">
+  <h1 class="title">ログイン</h1>
+  <!-- ID: admin -->
+  <!-- パスワード: password -->
+  <%= form_with url: "/login1" do |form| %>
+    <div class="field">
+      <p class="control">
+        <%= form.text_field :login_id, class: "input", placeholder: "ログインID" %>
+      </p>
+    </div>
+    <div class="field">
+      <p class="control">
+        <%= form.text_field :password, type: "password", class: "input", placeholder: "パスワード" %>
+      </p>
+    </div>
+    <%= form.submit class: "button is-primary", value: "ログイン" %>
+  <% end %>
+</div>

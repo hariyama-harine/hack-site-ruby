@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root to: 'login#login1'
+
+  get :login1, to: 'login#login1'
+  post :login1, to: 'login#post1'
+  get :result1, to: 'login#result1'
 end
